@@ -11,6 +11,6 @@ class Artist < ActiveRecord::Base
   end
 
   def genre_count
-    #return the number of genres associated with the artist
+    slef.songs.count.genre
   end
 end
